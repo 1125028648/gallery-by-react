@@ -9,16 +9,14 @@
   <audio id="audio" src="xiaguang.mp3" autoplay loop></audio>
   <script>
     function toggleSound() {
-      var music = document.getElementById("audio"); //获取ID  
-      console.log(music);
-      console.log(music.paused);
+      var music = document.getElementById("audio"); //获取ID 
       if (music.paused) { //判读是否播放  
         music.paused = false;
         music.play(); //没有就播放 
       }
 
     }
-    setInterval("toggleSound()", 1500);
+    setInterval("toggleSound()", 2000);
   </script>
 </head>
 <body>
