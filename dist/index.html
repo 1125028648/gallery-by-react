@@ -10,15 +10,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <audio id="audio" autoplay src="xg.ogg" loop></audio>
+  <audio id="audio" src="xg.ogg" autoplay loop></audio>
   <script>
     function toggleSound() {
-      var music = document.getElementById("audio"); //获取ID 
+      var music = document.getElementById("audio"); //获取ID  
       if (music.paused) { //判读是否播放  
         music.paused = false;
         music.play(); //没有就播放 
       }
-      
+
     }
     setInterval("toggleSound()", 3000);
 
